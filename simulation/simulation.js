@@ -188,7 +188,7 @@ function datasave(){
     const data = degt;
     clearInterval(drawtimer);
     document.forms.data.value = "";
-    var wwtxt = "時間[ms]\t角度[deg]\t角速度[deg/s]\t入力トルク[Nm]\n";
+    var wwtxt = "時間[s]\t角度[deg]\t角速度[deg/s]\t入力トルク[Nm]\n";
     for(let i=0;i<data.length;i++){
         wwtxt+= ((i*dt).toFixed(4)+"\t"+degt[i].toFixed(3) + "\t" + ddegt[i].toFixed(3) +"\t" +inpt[i].toFixed(3)+ "\n");
     }
